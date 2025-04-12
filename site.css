@@ -27,6 +27,8 @@ body{
     width:  300px;
     position: fixed;
     margin-top: 30px;
+    transition: all 1s ease;
+    left: 0;
 }
 
 .accaunt{
@@ -126,4 +128,72 @@ body{
 .buttons {
     display: flex;
     justify-content: center;
+}
+.reg{
+    width: 15%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    color: white;
+}
+.loginTo{
+    width: 97%;
+    color: white;
+}
+.email{
+    width: 97%;
+    color: white;
+}
+
+.password{
+    width: 97%;
+    margin-top: 39px;
+    color: white;
+}
+.loginTo,.password,.register,.email {
+    position:relative;
+    font-size: 1.5em;
+    background: linear-gradient(21deg, #51ff00, #104e00dc);
+    padding: 3px;
+    border: 1px solid green;
+    display: inline-block;
+    border-radius: 9999em;
+    font-family: "Montserrat Alternates", sans-serif;
+    color: #ceffb7;
+    font-size: larger;
+}
+
+.loginTo::placeholder,.password::placeholder,.email::placeholder{
+    color: white;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: medium;
+}
+
+.register{
+    font-size: larger;
+    width: 100%;
+}
+
+.register:active{
+    background-color: #a9ff81;
+    font-size: large;
+}
+
+.loginTo:hover,.password:hover,.email:hover{
+    background: linear-gradient(21deg, #49df04, #0b3401dc);
+}
+
+.again{
+    margin: 0;
+}
+
+.menu_hide{
+    border-radius: 20px;
+    background-color: #49df04;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.menu .menu_hide{
+    left: -300px;
 }
