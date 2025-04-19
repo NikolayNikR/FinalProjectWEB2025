@@ -1,2 +1,8 @@
-const menu = document.getElementsByClassName('.menu')
-const hide = document.getElementsByClassName('.menu_hide')
+const menu = document.querySelector('.menu');
+const hide = document.querySelector('.menu_hide');
+const grid = document.querySelector('.grid');
+
+hide.addEventListener('click', function() {
+    menu.classList.toggle('hiden');
+    grid.classList.toggle('hiden');
+})
