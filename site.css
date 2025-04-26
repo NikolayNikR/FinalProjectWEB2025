@@ -30,6 +30,7 @@ body{
     margin-top: 30px;
     transition: all 1s ease;
     left: 0;
+    z-index: 9999;
 }
 
 .accaunt{
@@ -83,10 +84,6 @@ body{
     font-family: "Montserrat Alternates", sans-serif;
     color: aliceblue;
     font-size: small;
-}
-
-.index {
-    display: flex;
 }
 
 .grid{
@@ -153,6 +150,14 @@ body{
     color: white;
 }
 
+
+.main-content{
+    position: absolute;
+    left: 0;
+    margin-left: -56px;
+}
+
+
 .password{
     width: 97%;
     margin-top: 39px;
@@ -202,5 +207,62 @@ body{
 }
 
 .hiden{
-    left: -300px;
+    left: -250px;
+}
+
+.showWallPaper{
+    width: 80%;
+    height: auto;
+    z-index: 9999999;
+    position: fixed;
+    left: 200px;
+    top: 20px;
+    transition: all 1s ease;
+}
+
+
+.fixDiv{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: fixed;
+    transition: all 1s ease;
+}
+
+.drkWall{
+    z-index: 999999;
+    background-color: rgba(3, 48, 0, 0.91);
+}
+
+.dnw{
+    width: 33px;
+    height: 33px;
+    margin-left: 150px;
+    margin-top: -35px;
+    border-radius: 20px;
+}
+
+.dnw:hover{
+    background-color: #215506a9;
+}
+
+.discription{
+    font-family: "Montserrat Alternates", sans-serif;
+    color: greenyellow;
+    margin-left: 10px;
+    width: 80%;
+}
+
+.end{
+    width: 100%;
+    height: 10%;
+    background-color:#215506a9;
+    margin-left: 0px;
+    color: azure;
+    margin-top: 100%;
+}
+
+.endText{
+    color: aliceblue;
+    margin-left: 10px;
 }
