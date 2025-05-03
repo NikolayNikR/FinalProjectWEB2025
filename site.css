@@ -266,3 +266,27 @@ body{
     color: aliceblue;
     margin-left: 10px;
 }
+
+.addWallPaper{
+    margin-left: 17%;
+    font-size: 1.5em;
+    background: linear-gradient(21deg, #51ff00, #104e00dc);
+    padding: 3px;
+    border: 1px solid green;
+    display: inline-block;
+    border-radius: 9999em;
+    font-family: "Montserrat Alternates", sans-serif;
+    color: #ceffb7;
+    font-size: larger;
+    transition: 0.3s;
+}
+
+.addWallPaper:hover{
+    margin-left: 11%;
+    font-size: 1.5em;
+    background: linear-gradient(21deg, #104e00dc, #51ff00);
+}
+
+
+
+
