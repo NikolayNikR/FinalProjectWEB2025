@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/site.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/image.css') }}">
+</head>
+<body>
+    <div class="search">
+        <button class="menu_hide">menu</button>
+        <input type="text" id="search" placeholder="поиск еды">
+    </div>
+
+    <div class="fixDiv"></div>
+
+
+    <div class="pos">
+
+        <div class="menu">
+            <div class="accaunt">
+                <div class="accaunt_Icon"></div>
+                <h1 class="accaunt_Name">you accaunt</h1>
+            </div>
+            <div class="buttons">
+                <a href="login.html"><div class="login">login</div></a>
+                <div class="sing_in">sing in</div>
+            </div>
+            <div class="discription">
+                <p >you discription:
+                 -------------------------------------------------------------
+                 --------------------------------------------------------
+                </p>
+            </div>
+            <a href="/upload"><button class="addWallPaper"> add Wall Paper </button></a>
+            <div class="end">
+                <a href="" class="endText">help</a>
+            </div>
+        </div>
+
+
+        <div class="main-content">
+
+            <div class="carousel-container">
+                <div class="carousel">
+                    <img src="{{ url_for('static', filename='1.png') }}" class="slide active" alt="изображение 1">
+                    <img src="{{ url_for('static', filename='2.png') }}" class="slide" alt="изображение 2">
+                    <img src="{{ url_for('static', filename='3.png') }}" class="slide" alt="изображение 3">
+                    <img src="{{ url_for('static', filename='4.png') }}" class="slide" alt="изображение 4">
+                    <img src="{{ url_for('static', filename='5.png') }}" class="slide" alt="изображение 5">
+                    <img src="{{ url_for('static', filename='1.png') }}" class="slide" alt="изображение 6">
+                    <img src="{{ url_for('static', filename='2.png') }}" class="slide" alt="изображение 7">
+                    <img src="{{ url_for('static', filename='3.png') }}" class="slide" alt="изображение 8">
+                </div>
+                <button class="prev-btn">‹</button>
+                <button class="next-btn">›</button>
+            </div>
+
+
+
+            <div class="grid" id="foodGrid">
+
+                    <div class="item" data-category="фрукты">
+                        <img src="{{ url_for('static', filename='1.png') }}" alt="" class="photo">
+                        <span class="name">ground</span>
+                        <br>
+                        <span class="creator">by: user</span>
+                        <a href="{{ url_for('static', filename='1.png') }}" download="WallPaper.png"><div class="dnw"><img src="{{ url_for('static', filename='donwald.png') }}"></div></a>
+                    </div>
+                    <div class="item" data-category="фрукты">
+                        <img src="{{ url_for('static', filename='2.png') }}" alt="" class="photo">
+                        <span class="name">ground</span>
+                        <br>
+                        <span class="creator">by: user</span>
+                        <a href="{{ url_for('static', filename='2.png') }}" download="WallPaper.png"><div class="dnw"><img src="{{ url_for('static', filename='donwald.png') }}"></div></a>
+                    </div>
+                    <div class="item" data-category="фрукты">
+                        <img src="{{ url_for('static', filename='3.png') }}" alt="" class="photo">
+                        <span class="name">ground</span>
+                        <br>
+                        <span class="creator">by: user</span>
+                        <a href="{{ url_for('static', filename='3.png') }}" download="WallPaper.png"><div class="dnw"><img src="{{ url_for('static', filename='donwald.png') }}"></div></a>
+                    </div>
+                    <div class="item" data-category="фрукты">
+                        <img src="{{ url_for('static', filename='4.png') }}" alt="" class="photo">
+                        <span class="name">ground</span>
+                        <br>
+                        <span class="creator">by: user</span>
+                        <a href="{{ url_for('static', filename='4.png') }}" download="WallPaper.png"><div class="dnw"><img src="{{ url_for('static', filename='donwald.png') }}"></div></a>
+                    </div>
+                    <div class="item" data-category="фрукты">
+                        <img src="{{ url_for('static', filename='5.png') }}" alt="" class="photo">
+                        <span class="name">ground</span>
+                        <br>
+                        <span class="creator">by: user</span>
+                        <a href="{{ url_for('static', filename='5.png') }}" download="WallPaper.png"><div class="dnw"><img src="{{ url_for('static', filename='donwald.png') }}"></div></a>
+                    </div>
+
+            </div>
+
+    </div>
+</div>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/hide.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/image.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/showWallPapers.js') }}"></script>
+</body>
+</html>

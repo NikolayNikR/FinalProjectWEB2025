@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: rgb(1, 29, 0);
+    margin: 0;
+}
+
+.search{
+    z-index: 9999;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(4, 67, 0);
+    position: fixed;
+}
+
+#search{
+    height: 20px;
+    margin-top: 2.5px;
+    width: 30%;
+    border-radius: 15px;
+}
+
+.menu{
+    height: 100vh;
+    background-color: rgb(4, 67, 0);
+    width:  250px;
+    position: fixed;
+    margin-top: 30px;
+    transition: all 1s ease;
+    left: 0;
+    z-index: 9999;
+}
+
+.accaunt{
+    height: 30vh;
+    width: auto;
+    background-color: rgb(21, 171, 34);
+    justify-content: center;
+    display: flex;
+}
+
+.accaunt_Icon{
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(70, 70, 70);
+    margin-top: 10px;
+}
+
+.accaunt_Name{
+    margin-top: 150px;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.pos{
+    display: flex;
+    width: 100%;
+}
+
+.item{
+    width: 220px;
+    height: 160px;
+    background-color: rgb(6, 59, 0);
+    border-radius: 20px;
+    margin: 50px;
+}
+
+.photo{
+    width: 220px;
+    height: 100px;
+    background-color: rgb(135, 135, 135);
+}
+
+.name {
+    font-family: "Montserrat Alternates", sans-serif;
+    color: aliceblue;
+    padding: 0px;
+    font-size: x-large;
+}
+.creator{
+    font-family: "Montserrat Alternates", sans-serif;
+    color: aliceblue;
+    font-size: small;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,220px);
+    width: auto;
+    height: auto;
+    margin-top: 0px;
+    margin-left: 350px;
+    gap: 50px;
+    width: 80%;
+}
+
+.login{
+    font-family: "Montserrat Alternates", sans-serif;
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(0, 172, 6);
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(217, 217, 217);
+}
+
+.login:hover{
+    background-color: rgb(46, 82, 43);
+    color: rgb(114, 149, 110);
+}
+
+.sing_in{
+    font-family: "Montserrat Alternates", sans-serif;
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(3, 104, 6);
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(217, 217, 217);
+}
+
+.sing_in:hover{
+    background-color: rgb(46, 82, 43);
+    color: rgb(110, 149, 113);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+.reg{
+    width: 15%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    color: white;
+}
+.loginTo{
+    width: 97%;
+    color: white;
+}
+.email{
+    width: 97%;
+    color: white;
+}
+
+
+.main-content{
+    position: absolute;
+    left: 0;
+    margin-left: -56px;
+}
+
+
+.password{
+    width: 97%;
+    margin-top: 39px;
+    color: white;
+}
+.loginTo,.password,.register,.email {
+    position:relative;
+    font-size: 1.5em;
+    background: linear-gradient(21deg, #51ff00, #104e00dc);
+    padding: 3px;
+    border: 1px solid green;
+    display: inline-block;
+    border-radius: 9999em;
+    font-family: "Montserrat Alternates", sans-serif;
+    color: #ceffb7;
+    font-size: larger;
+}
+
+.loginTo::placeholder,.password::placeholder,.email::placeholder{
+    color: white;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: medium;
+}
+
+.register{
+    font-size: larger;
+    width: 100%;
+}
+
+.register:active{
+    background-color: #a9ff81;
+    font-size: large;
+}
+
+.loginTo:hover,.password:hover,.email:hover{
+    background: linear-gradient(21deg, #49df04, #0b3401dc);
+}
+
+.again{
+    margin: 0;
+}
+
+.menu_hide{
+    border-radius: 20px;
+    background-color: #49df04;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.hiden{
+    left: -250px;
+}
+
+.showWallPaper{
+    width: 80%;
+    height: auto;
+    z-index: 9999999;
+    position: fixed;
+    left: 200px;
+    top: 20px;
+    transition: all 1s ease;
+}
+
+
+.fixDiv{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: fixed;
+    transition: all 1s ease;
+}
+
+.drkWall{
+    z-index: 999999;
+    background-color: rgba(3, 48, 0, 0.91);
+}
+
+.dnw{
+    width: 33px;
+    height: 33px;
+    margin-left: 150px;
+    margin-top: -35px;
+    border-radius: 20px;
+}
+
+.dnw:hover{
+    background-color: #215506a9;
+}
+
+.discription{
+    font-family: "Montserrat Alternates", sans-serif;
+    color: greenyellow;
+    margin-left: 10px;
+    width: 80%;
+}
+
+.end{
+    width: 100%;
+    height: 10%;
+    background-color:#215506a9;
+    margin-left: 0px;
+    color: azure;
+    margin-top: 100%;
+}
+
+.endText{
+    color: aliceblue;
+    margin-left: 10px;
+}
+
+.addWallPaper{
+    margin-left: 17%;
+    font-size: 1.5em;
+    background: linear-gradient(21deg, #51ff00, #104e00dc);
+    padding: 3px;
+    border: 1px solid green;
+    display: inline-block;
+    border-radius: 9999em;
+    font-family: "Montserrat Alternates", sans-serif;
+    color: #ceffb7;
+    font-size: larger;
+    transition: 0.3s;
+}
+
+.addWallPaper:hover{
+    margin-left: 11%;
+    font-size: 1.5em;
+    background: linear-gradient(21deg, #104e00dc, #51ff00);
+}
